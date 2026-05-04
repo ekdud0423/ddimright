@@ -1,85 +1,247 @@
+<section class="didim-page">
+
+  <!-- 상단 헤더 -->
+  <div class="hero">
+    <p class="sub-title">DIDIM PROJECT ARCHIVE</p>
+    <h1>디딤프로젝트 공연기록</h1>
+    <p class="hero-text">
+      젊은 창작자들의 첫 발화와 실험,<br>
+      무대 위에 남겨진 순간들을 기록합니다.
+    </p>
+  </div>
+
+  <!-- 프로젝트 23 -->
+  <div class="year-section">
+    <h2>디딤프로젝트23</h2>
+
+    <div class="work-card">
+
+      <div class="photo-wrap">
+        <img src="img1.jpg">
+        <img src="img2.jpg">
+        <img src="img3.jpg">
+      </div>
+
+      <div class="work-info">
+        <span class="label">참여단체</span>
+        <h3>극단 흰디</h3>
+
+        <span class="label">작품명</span>
+        <p>&lt;수자&gt;</p>
+
+        <span class="label">크레딧</span>
+        <p>조연출 장수안<br>출연 이다영 · 이승아</p>
+      </div>
+
+    </div>
+
+
+    <div class="work-card">
+
+      <div class="photo-wrap">
+        <img src="img4.jpg">
+        <img src="img5.jpg">
+        <img src="img6.jpg">
+      </div>
+
+      <div class="work-info">
+        <span class="label">참여단체</span>
+        <h3>극단 건이역</h3>
+
+        <span class="label">작품명</span>
+        <p>&lt;Hello, world!&gt;</p>
+
+        <span class="label">크레딧</span>
+        <p>조연출 황은우<br>출연 이다영 · 이승아</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- 프로젝트 24 -->
+  <div class="year-section">
+    <h2>디딤프로젝트24</h2>
+
+    <div class="work-card">
+
+      <div class="photo-wrap">
+        <img src="img7.jpg">
+        <img src="img8.jpg">
+        <img src="img9.jpg">
+      </div>
+
+      <div class="work-info">
+        <span class="label">참여단체</span>
+        <h3>극단 백일몽</h3>
+
+        <span class="label">작품명</span>
+        <p>&lt;웜홀&gt;</p>
+
+        <span class="label">크레딧</span>
+        <p>작/연출 서우진</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
 <style>
-.history-section {
-  background: #cfcfcf;
-  padding: 60px 40px;
-  text-align: left;
+body{
+margin:0;
+padding:0;
+background:#111;
+font-family:'Pretendard', sans-serif;
+color:#f5f1ea;
 }
 
-.history-title {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 50px;
-  color: #111;
+/* 전체 */
+.didim-page{
+padding:80px 24px 140px;
+max-width:1300px;
+margin:auto;
 }
 
-.timeline {
-  position: relative;
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 45px;
+/* 상단 */
+.hero{
+text-align:center;
+margin-bottom:90px;
 }
 
-/* 세로줄 */
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 12px;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  background: #5a4a56;
+.sub-title{
+letter-spacing:3px;
+font-size:13px;
+color:#9f8e96;
+margin-bottom:18px;
 }
 
-/* 항목 */
-.timeline-item {
-  position: relative;
-  display: flex;
-  gap: 35px;
-  margin-bottom: 34px;
-  align-items: flex-start;
+.hero h1{
+font-size:54px;
+margin:0 0 20px;
+font-weight:800;
 }
 
-/* 동그라미 */
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: 8px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #5a4a56;
+.hero-text{
+font-size:18px;
+line-height:1.8;
+color:#d2ccc8;
 }
 
-.timeline-date {
-  min-width: 120px;
-  font-size: 18px;
-  font-weight: 700;
-  color: #5a4a56;
+/* 회차 */
+.year-section{
+margin-bottom:90px;
 }
 
-.timeline-content {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #111;
-  word-break: keep-all;
+.year-section h2{
+font-size:34px;
+margin-bottom:35px;
+padding-left:18px;
+border-left:5px solid #6b5563;
+}
+
+/* 작품 카드 */
+.work-card{
+display:flex;
+gap:35px;
+padding:28px;
+margin-bottom:28px;
+background:#1a1a1a;
+border:1px solid rgba(255,255,255,0.06);
+transition:0.35s;
+}
+
+.work-card:hover{
+transform:translateY(-4px);
+border-color:#6b5563;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* 사진 */
+.photo-wrap{
+flex:1;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:8px;
+}
+
+.photo-wrap img{
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+transition:0.35s;
+cursor:pointer;
+}
+
+.photo-wrap img:hover{
+transform:scale(1.03);
+opacity:0.88;
+}
+
+/* 설명 */
+.work-info{
+width:260px;
+}
+
+.label{
+display:block;
+font-size:12px;
+letter-spacing:2px;
+color:#9f8e96;
+margin-bottom:8px;
+margin-top:18px;
+}
+
+.work-info h3{
+font-size:28px;
+margin:0;
+}
+
+.work-info p{
+font-size:16px;
+line-height:1.7;
+margin:0;
+color:#ddd6d2;
 }
 
 /* 모바일 */
-@media (max-width: 768px) {
-  .history-section {
-    padding: 40px 20px;
-  }
+@media (max-width:900px){
 
-  .timeline-item {
-    flex-direction: column;
-    gap: 6px;
-    margin-bottom: 28px;
-  }
+.hero h1{
+font-size:38px;
+}
 
-  .timeline-date {
-    min-width: auto;
-  }
+.work-card{
+flex-direction:column;
+}
+
+.work-info{
+width:100%;
+}
+
+.photo-wrap{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:600px){
+
+.photo-wrap{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+.year-section h2{
+font-size:26px;
+}
+
 }
 </style>
